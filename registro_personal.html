@@ -78,7 +78,6 @@ textarea{resize:vertical;min-height:72px}
 .btn-save:hover{background:#3A3080}
 .btn-danger{padding:8px 14px;font-size:13px;background:transparent;border:1px solid #e0b4b4;border-radius:var(--radius-sm);cursor:pointer;color:var(--red);font-family:'DM Sans',sans-serif}
 .btn-danger:hover{background:var(--red-light)}
-/* DEUDA CARD */
 .deuda-card{background:var(--surface);border:1.5px solid #e0b4b4;border-radius:var(--radius);padding:1.25rem;margin-bottom:.875rem;box-shadow:var(--shadow)}
 .deuda-card.ok{border-color:#9FE1CB}
 .deuda-label{font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
@@ -88,7 +87,6 @@ textarea{resize:vertical;min-height:72px}
 .deuda-fam-name{font-size:13px;color:var(--text2)}
 .deuda-fam-val{font-size:14px;font-weight:600;font-family:'DM Mono',monospace;color:var(--red)}
 .deuda-fam-val.ok{color:var(--green)}
-/* STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:.875rem}
 .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
 .stat-label{font-size:11px;color:var(--text2);margin-bottom:4px;font-weight:500}
@@ -97,65 +95,43 @@ textarea{resize:vertical;min-height:72px}
 .stat-sub{font-size:11px;color:var(--text3);margin-top:2px;font-family:'DM Mono',monospace}
 .slabel{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
 .divider{border:none;border-top:1px solid var(--border);margin:14px 0}
-/* TAB BAR */
 .tab-bar{display:flex;gap:3px;background:var(--surface2);border-radius:10px;padding:3px;margin-bottom:1.25rem}
 .tab-btn{flex:1;padding:7px 0;font-size:12px;border:none;background:transparent;border-radius:8px;cursor:pointer;color:var(--text2);font-family:'DM Sans',sans-serif;font-weight:500}
 .tab-btn.act{background:var(--surface);color:var(--text);font-weight:600;border:1px solid var(--border);box-shadow:var(--shadow)}
 .tab-content{display:none}.tab-content.act{display:block}
-/* EMP ROW */
 .emp-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
 .emp-row:last-child{border:none}
 .emp-av{width:34px;height:34px;font-size:12px;flex-shrink:0}
-/* ENTRY CARD */
 .entry-card{background:var(--bg);border-radius:var(--radius-sm);padding:10px 12px;margin-bottom:8px}
 .entry-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
 .entry-mini-av{width:22px;height:22px;border-radius:50%;font-size:9px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
-/* JBREAK */
 .jbreak{background:var(--bg);border-radius:var(--radius-sm);padding:10px 14px;margin-bottom:8px}
 .jrow{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--border);font-size:13px}
 .jrow:last-child{border:none}
 .jlabel{color:var(--text2)}.jval{font-weight:600;font-family:'DM Mono',monospace}
 .jval.accent{color:var(--purple);font-size:15px}
-/* PAID ROW */
-.paid-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--border);margin-top:4px}
-/* TOGGLE */
-.toggle{position:relative;width:44px;height:24px}
-.toggle input{opacity:0;width:0;height:0}
-.slider{position:absolute;cursor:pointer;inset:0;background:var(--border-strong);border-radius:12px;transition:.2s}
-.slider::before{content:'';position:absolute;width:18px;height:18px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.2s}
-input:checked+.slider{background:var(--purple)}
-input:checked+.slider::before{transform:translateX(20px)}
-/* TASKS */
 .task-item{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:6px}
 .task-check{width:15px;height:15px;accent-color:var(--purple);cursor:pointer;flex-shrink:0}
 .task-del{background:transparent;border:none;cursor:pointer;color:var(--text3);font-size:18px;line-height:1;padding:0 2px}
 .task-del:hover{color:var(--red)}
 .add-task-row{display:flex;gap:8px;margin-top:4px}
 .add-task-row input{flex:1}
-/* FAM CARD (pagos) */
 .fam-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:.875rem;box-shadow:var(--shadow)}
 .fam-card-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
 .fam-card-name{font-size:15px;font-weight:600}
 .pill{font-size:11px;padding:4px 10px;border-radius:20px;font-weight:500}
 .pill-ok{background:var(--green-light);color:var(--green)}.pill-no{background:var(--red-light);color:var(--red)}
-/* PAY TABLE */
 .pay-table{width:100%;font-size:13px;border-collapse:collapse;margin-top:8px}
 .pay-table th{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.4px;padding:4px 0;text-align:left;border-bottom:1px solid var(--border)}
 .pay-table td{padding:7px 4px;border-bottom:1px solid var(--border);vertical-align:middle}
 .pay-table tr:last-child td{border:none}
-.pay-tag{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600}
-.pay-tag-a{background:var(--amber-light);color:var(--amber)}
-/* EXTRA FORM */
 .extra-form{background:var(--bg);border-radius:var(--radius-sm);padding:12px;margin-top:12px;border:1.5px dashed var(--border-strong)}
 .extra-form-title{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.4px}
-/* FILE UPLOAD */
 .file-upload-lbl{display:flex;align-items:center;gap:8px;padding:9px 12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;font-size:13px;color:var(--text2);width:100%;font-family:'DM Sans',sans-serif;transition:border-color .15s}
 .file-upload-lbl:hover{border-color:var(--purple-mid);color:var(--purple)}
 .file-attached{font-size:12px;color:var(--green);margin-top:4px}
-/* COLAB ROW */
 .colab-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
 .colab-row:last-child{border:none}
-/* MODAL */
 .modal-bg{position:fixed;inset:0;background:rgba(20,18,14,.45);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem}
 .modal-bg.open{display:flex}
 .modal{background:var(--surface);border-radius:var(--radius);padding:1.5rem;width:340px;max-width:100%;box-shadow:0 8px 32px rgba(0,0,0,.14);max-height:90vh;overflow-y:auto}
@@ -165,9 +141,23 @@ input:checked+.slider::before{transform:translateX(20px)}
 .btn-cancel{background:transparent;border:1px solid var(--border);color:var(--text)}
 .btn-ok{background:var(--purple);border:none;color:#fff;font-weight:600}
 .toast{background:var(--green-light);color:var(--green);border-radius:var(--radius-sm);padding:10px 14px;font-size:13px;font-weight:500;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.loading-overlay{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2000;gap:16px}
+.loading-spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--purple);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:14px;color:var(--text2)}
+.sync-badge{font-size:11px;color:var(--text3);display:flex;align-items:center;gap:4px;margin-left:auto}
+.sync-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 </style>
 </head>
 <body>
+
+<!-- LOADING -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Cargando Lumina...</div>
+</div>
+
 <div class="app">
 
 <!-- HOME -->
@@ -235,7 +225,12 @@ input:checked+.slider::before{transform:translateX(20px)}
 
 <!-- VISTA COLABORADOR -->
 <div class="screen" id="sc-emp">
-  <div class="topnav"><button class="back-btn" onclick="show('sc-home')">←</button><span class="nav-title" id="ename"></span><span class="badge badge-e">Colaborador</span></div>
+  <div class="topnav">
+    <button class="back-btn" onclick="show('sc-home')">←</button>
+    <span class="nav-title" id="ename"></span>
+    <span class="badge badge-e">Colaborador</span>
+    <div class="sync-badge"><div class="sync-dot"></div>En línea</div>
+  </div>
   <div class="cal-header">
     <button class="cal-nav-btn" onclick="cm(-1)">‹</button><span class="cal-title" id="ecal-lbl"></span><button class="cal-nav-btn" onclick="cm(1)">›</button>
   </div>
@@ -258,7 +253,12 @@ input:checked+.slider::before{transform:translateX(20px)}
 
 <!-- PANEL ADMIN -->
 <div class="screen" id="sc-admin">
-  <div class="topnav"><button class="back-btn" onclick="show('sc-home')">←</button><span class="nav-title">Lumina · Admin</span><span class="badge badge-a">Admin</span></div>
+  <div class="topnav">
+    <button class="back-btn" onclick="show('sc-home')">←</button>
+    <span class="nav-title">Lumina · Admin</span>
+    <span class="badge badge-a">Admin</span>
+    <div class="sync-badge"><div class="sync-dot"></div>En línea</div>
+  </div>
   <div class="tab-bar">
     <button class="tab-btn act" onclick="stab('r')">Resumen</button>
     <button class="tab-btn" onclick="stab('c')">Tareas</button>
@@ -266,7 +266,6 @@ input:checked+.slider::before{transform:translateX(20px)}
     <button class="tab-btn" onclick="stab('g')">Config</button>
   </div>
 
-  <!-- RESUMEN -->
   <div class="tab-content act" id="tc-r">
     <div id="deuda-main"></div>
     <div class="slabel">Horas acumuladas sin pagar</div>
@@ -278,7 +277,6 @@ input:checked+.slider::before{transform:translateX(20px)}
     <div class="card" style="padding:0 1.25rem"><div id="elist"></div></div>
   </div>
 
-  <!-- CALENDARIO / TAREAS -->
   <div class="tab-content" id="tc-c">
     <div class="cal-header">
       <button class="cal-nav-btn" onclick="acm(-1)">‹</button><span class="cal-title" id="acal-lbl"></span><button class="cal-nav-btn" onclick="acm(1)">›</button>
@@ -302,7 +300,6 @@ input:checked+.slider::before{transform:translateX(20px)}
     </div>
   </div>
 
-  <!-- PAGOS -->
   <div class="tab-content" id="tc-p">
     <div class="stats-grid" id="fstats" style="margin-bottom:1rem"></div>
     <div class="slabel">Información bancaria de colaboradores</div>
@@ -310,7 +307,6 @@ input:checked+.slider::before{transform:translateX(20px)}
     <div id="fcards"></div>
   </div>
 
-  <!-- CONFIG -->
   <div class="tab-content" id="tc-g">
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
@@ -342,13 +338,39 @@ input:checked+.slider::before{transform:translateX(20px)}
 <div class="modal-bg" id="mbg"><div class="modal" id="mbox"></div></div>
 
 <script>
+// ═══════════════════════════════════════════
+// SUPABASE CONFIG
+// ═══════════════════════════════════════════
+const SB_URL='https://eeyojalknqdpxnwncvax.supabase.co';
+const SB_KEY='sb_publishable_GtI0Df6vhkfzFqKOOq0tEQ_ARM0MBjY';
+
+async function sbFetch(path,method='GET',body=null){
+  const opts={method,headers:{'Content-Type':'application/json','apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=representation'}};
+  if(body)opts.body=JSON.stringify(body);
+  const r=await fetch(SB_URL+'/rest/v1/'+path,opts);
+  if(!r.ok){const e=await r.text();throw new Error(e);}
+  const txt=await r.text();
+  return txt?JSON.parse(txt):[];
+}
+const db={
+  get:  (t,q='')=>sbFetch(t+(q?'?'+q:'')),
+  post: (t,b)=>sbFetch(t,'POST',b),
+  patch:(t,q,b)=>sbFetch(t+'?'+q,'PATCH',b),
+  del:  (t,q)=>sbFetch(t+'?'+q,'DELETE'),
+  upsert:(t,b)=>sbFetch(t,'POST',Array.isArray(b)?b:[b]).catch(()=>
+    sbFetch(t+'?id=eq.'+b.id,'PATCH',b))
+};
+
+// ═══════════════════════════════════════════
+// STATE (in-memory, loaded from Supabase)
+// ═══════════════════════════════════════════
 const MO=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 const DW=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
 const JH=8;
 
 let S={
   adminPin:'1234',colabs:[],
-  en:{},tasks:{},paid:{},
+  en:{},tasks:{},
   famPayments:{fam1:[],fam2:[]},
   pF:100000,pH:50000,
   fam1:'O. Mora',fam2:'O. Argüello',
@@ -356,30 +378,102 @@ let S={
   aY:new Date().getFullYear(),aM:new Date().getMonth(),aSel:null,
   cu:null,adminPinIn:'',colabPinIn:'',colabTarget:null
 };
-
 const tempFiles={};
 
-function persist(){
-  try{localStorage.setItem('rp_lumina',JSON.stringify(S))}
-  catch(e){
-    try{
-      const light=JSON.parse(JSON.stringify(S));
-      ['fam1','fam2'].forEach(f=>(light.famPayments[f]||[]).forEach(p=>{delete p.fileData;delete p.fileName}));
-      localStorage.setItem('rp_lumina',JSON.stringify(light));
-    }catch(e2){}
-  }
-}
-function hydrate(){
+// ═══════════════════════════════════════════
+// LOAD ALL DATA FROM SUPABASE
+// ═══════════════════════════════════════════
+async function loadAll(){
   try{
-    const d=JSON.parse(localStorage.getItem('rp_lumina')||'null');
-    if(!d)return;
-    ['adminPin','colabs','en','tasks','paid','famPayments','pF','pH','fam1','fam2'].forEach(k=>{if(d[k]!==undefined)S[k]=d[k]});
-    if(!S.famPayments)S.famPayments={fam1:[],fam2:[]};
-    if(!S.famPayments.fam1)S.famPayments.fam1=[];
-    if(!S.famPayments.fam2)S.famPayments.fam2=[];
-  }catch(e){}
+    const [cfgRows,colabs,entries,tasks,payments]=await Promise.all([
+      db.get('config','select=key,value'),
+      db.get('colabs','select=*&order=created_at.asc'),
+      db.get('entries','select=*'),
+      db.get('tasks','select=*'),
+      db.get('family_payments','select=*&order=created_at.asc')
+    ]);
+    // Config
+    cfgRows.forEach(r=>{
+      if(r.key==='adminPin')S.adminPin=r.value;
+      if(r.key==='pF')S.pF=+r.value;
+      if(r.key==='pH')S.pH=+r.value;
+      if(r.key==='fam1')S.fam1=r.value;
+      if(r.key==='fam2')S.fam2=r.value;
+    });
+    // Colabs — parse bank JSON
+    S.colabs=colabs.map(c=>({...c,bank:c.bank||{},pF:c.pf||S.pF,pH:c.ph||S.pH}));
+    // Entries → S.en keyed by colabId_y_m_d
+    S.en={};
+    entries.forEach(e=>{
+      const key=e.colab_id+'_'+e.year+'_'+e.month+'_'+e.day;
+      S.en[key]={e:e.entrada,s:e.salida,act:e.actividades,_id:e.id};
+    });
+    // Tasks → S.tasks keyed by day_key
+    S.tasks={};
+    tasks.forEach(t=>{
+      if(!S.tasks[t.day_key])S.tasks[t.day_key]=[];
+      S.tasks[t.day_key].push({text:t.text,done:t.done,_id:t.id});
+    });
+    // Family payments
+    S.famPayments={fam1:[],fam2:[]};
+    payments.forEach(p=>{
+      const fid=p.family_id;
+      if(!S.famPayments[fid])S.famPayments[fid]=[];
+      S.famPayments[fid].push({id:p.id,date:p.date,amount:+p.amount,note:p.note||'',fileName:p.file_name,fileData:p.file_data});
+    });
+  }catch(e){
+    alert('Error conectando a la base de datos. Verifica tu conexión.');
+    console.error(e);
+  }
+  document.getElementById('loading-overlay').style.display='none';
 }
 
+// ═══════════════════════════════════════════
+// SAVE HELPERS
+// ═══════════════════════════════════════════
+async function saveConfig(key,value){
+  await sbFetch('config?key=eq.'+key,'PATCH',{value:String(value)});
+}
+async function saveColabToDB(c){
+  const row={id:c.id,name:c.name,pin:c.pin,pf:c.pF||S.pF,ph:c.pH||S.pH,bank:c.bank||{}};
+  try{await db.post('colabs',row);}catch(e){await db.patch('colabs','id=eq.'+c.id,row);}
+}
+async function delColabFromDB(id){
+  await db.del('colabs','id=eq.'+id);
+}
+async function saveEntryToDB(colabId,y,m,d,entrada,salida,act,existingId){
+  const row={colab_id:colabId,year:y,month:m,day:d,entrada,salida,actividades:act};
+  if(existingId){
+    await db.patch('entries','id=eq.'+existingId,row);
+    return existingId;
+  } else {
+    row.id='e'+Date.now();
+    await db.post('entries',row);
+    return row.id;
+  }
+}
+async function saveTaskToDB(dayKey,text){
+  const row={id:'t'+Date.now(),day_key:dayKey,text,done:false};
+  await db.post('tasks',row);
+  return row.id;
+}
+async function updateTaskDoneToDB(taskId,done){
+  await db.patch('tasks','id=eq.'+taskId,{done});
+}
+async function delTaskFromDB(taskId){
+  await db.del('tasks','id=eq.'+taskId);
+}
+async function saveFamPaymentToDB(p){
+  const row={id:p.id,family_id:p.familyId,date:p.date,amount:p.amount,note:p.note||'',file_name:p.fileName||null,file_data:p.fileData||null};
+  await db.post('family_payments',row);
+}
+async function delFamPaymentFromDB(id){
+  await db.del('family_payments','id=eq.'+id);
+}
+
+// ═══════════════════════════════════════════
+// CORE HELPERS
+// ═══════════════════════════════════════════
 function fmt(n){return'$'+Math.round(n).toLocaleString('es-CO')}
 function getIni(name){return name.trim().split(/\s+/).slice(0,2).map(w=>w[0].toUpperCase()).join('')}
 function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
@@ -387,29 +481,26 @@ function t2m(t){const[h,m]=t.split(':').map(Number);return h*60+m}
 function dk(uid,y,m,d){return uid+'_'+y+'_'+m+'_'+d}
 function sk(y,m,d){return 'sh_'+y+'_'+m+'_'+d}
 function eMins(e){if(!e||!e.e||!e.s)return 0;const m=t2m(e.s)-t2m(e.e);return m>0?m:0}
-function dVal(mins, colabId){
+function dVal(mins,colabId){
   const jd=mins/(JH*60);
   if(mins<=0)return{v:0,tipo:'Sin horas',jd:0};
-  // Per-colab rates if set, else fall back to global defaults
   let pF=S.pF,pH=S.pH;
   if(colabId){const c=S.colabs.find(x=>x.id===colabId);if(c){if(c.pF)pF=c.pF;if(c.pH)pH=c.pH;}}
   if(jd>=1)return{v:pF,tipo:'Jornada completa',jd};
   return{v:pH,tipo:'Media jornada',jd};
 }
+function toast(msg,parentId='emsg'){
+  const b=document.createElement('div');b.className='toast';b.innerHTML='✓ '+msg;
+  document.getElementById(parentId).prepend(b);setTimeout(()=>b.remove(),2500);
+}
 
-/* ─ PAID DAYS SET ─
-   Computes which work days are "paid" by walking chronologically from oldest to newest,
-   consuming the total payment budget (extra payments from both families) against each
-   day's value. Returns a Set of "y_m_d" strings that are covered.
-*/
 function computePaidDays(){
   const days=[];
   Object.entries(S.en).forEach(([key])=>{
     const p=key.split('_');if(p.length<4)return;
     const y=+p[1],m=+p[2],d=+p[3];
     const dateNum=y*10000+m*100+d;
-    if(!days.find(x=>x.y===y&&x.m===m&&x.d===d))
-      days.push({y,m,d,dateNum});
+    if(!days.find(x=>x.y===y&&x.m===m&&x.d===d))days.push({y,m,d,dateNum});
   });
   days.sort((a,b)=>a.dateNum-b.dateNum);
   const ex1=(S.famPayments.fam1||[]).reduce((a,p)=>a+p.amount,0);
@@ -417,7 +508,6 @@ function computePaidDays(){
   let budget=ex1+ex2;
   const paidSet=new Set();
   for(const{y,m,d} of days){
-    // Sum value per colab (each may have own rate)
     let val=0;
     S.colabs.forEach(c=>{const e=S.en[dk(c.id,y,m,d)];if(e){const mi=eMins(e);if(mi>0)val+=dVal(mi,c.id).v;}});
     if(val>0&&budget>=val){budget-=val;paidSet.add(y+'_'+m+'_'+d);}
@@ -425,11 +515,8 @@ function computePaidDays(){
   }
   return paidSet;
 }
-
-/* ─ GLOBAL DEUDA ─ */
 function globalDeuda(){
   let earned=0;
-  // Sum per-colab value for each entry
   Object.entries(S.en).forEach(([key,e])=>{
     const p=key.split('_');if(p.length<4)return;
     const uid=p[0];const mi=eMins(e);if(mi>0)earned+=dVal(mi,uid).v;
@@ -441,15 +528,13 @@ function globalDeuda(){
   const d2=Math.max(0,halfEarned-ex2);
   return{earned,ex1,ex2,d1,d2,total:Math.round(d1+d2)};
 }
-
 function unpaidHours(){
   const paidSet=computePaidDays();
   let tM=0,tV=0;
   const days2=new Set();
   Object.entries(S.en).forEach(([key])=>{
     const p=key.split('_');if(p.length<4)return;
-    const y=+p[1],m2=+p[2],d=+p[3];
-    days2.add(y+'_'+m2+'_'+d);
+    days2.add(p[1]+'_'+p[2]+'_'+p[3]);
   });
   for(const dayId of days2){
     if(paidSet.has(dayId))continue;
@@ -458,7 +543,6 @@ function unpaidHours(){
   }
   return{tM,tV};
 }
-
 function mStats(y,m){
   const nd=new Date(y,m+1,0).getDate();
   let tM=0,tV=0,dias=0,jD=0;
@@ -470,7 +554,9 @@ function mStats(y,m){
   return{tM,tV,dias,jD};
 }
 
-/* ── HOME ── */
+// ═══════════════════════════════════════════
+// HOME
+// ═══════════════════════════════════════════
 function goAdmin(){S.adminPinIn='';document.getElementById('aperr').textContent='';updADots();show('sc-pin-admin')}
 function goColab(){rColabSel();show('sc-colab-select')}
 function rColabSel(){
@@ -483,7 +569,9 @@ function rColabSel(){
   </div>`).join('');
 }
 
-/* ── ADMIN PIN ── */
+// ═══════════════════════════════════════════
+// ADMIN PIN
+// ═══════════════════════════════════════════
 function updADots(){for(let i=0;i<4;i++)document.getElementById('apd'+i).classList.toggle('f',i<S.adminPinIn.length)}
 function apk(k){if(S.adminPinIn.length>=4)return;S.adminPinIn+=k;updADots();if(S.adminPinIn.length===4)setTimeout(()=>{
   if(S.adminPinIn===S.adminPin){showAdmin();}
@@ -491,7 +579,9 @@ function apk(k){if(S.adminPinIn.length>=4)return;S.adminPinIn+=k;updADots();if(S
 },120)}
 function apb(){S.adminPinIn=S.adminPinIn.slice(0,-1);updADots();document.getElementById('aperr').textContent=''}
 
-/* ── COLAB PIN ── */
+// ═══════════════════════════════════════════
+// COLAB PIN
+// ═══════════════════════════════════════════
 function selColab(id){
   S.colabPinIn='';S.colabTarget=S.colabs.find(c=>c.id===id);
   const c=S.colabTarget;
@@ -508,7 +598,9 @@ function cpk(k){if(S.colabPinIn.length>=4)return;S.colabPinIn+=k;updCDots();if(S
 },120)}
 function cpb(){S.colabPinIn=S.colabPinIn.slice(0,-1);updCDots();document.getElementById('cperr').textContent=''}
 
-/* ── COLABORADOR ── */
+// ═══════════════════════════════════════════
+// COLABORADOR
+// ═══════════════════════════════════════════
 function showEmp(){
   document.getElementById('ename').textContent=S.cu.name;
   S.eY=new Date().getFullYear();S.eM=new Date().getMonth();S.eSel=null;
@@ -528,10 +620,7 @@ function rECal(){
     const isT=td.getFullYear()===S.eY&&td.getMonth()===S.eM&&td.getDate()===d;
     let cls='cal-day';
     if(isT)cls+=' today';if(S.eSel===d)cls+=' sel';
-    if(S.en[key]){
-      if(paidSet.has(dayId))cls+=' paid-d';
-      else cls+=' pending-d';
-    }
+    if(S.en[key]){cls+=paidSet.has(dayId)?' paid-d':' pending-d';}
     g.innerHTML+=`<div class="${cls}" onclick="eSel(${d})">${d}</div>`;
   }
 }
@@ -558,16 +647,28 @@ function rTro(key){
     <span style="font-size:13px;flex:1;${t.done?'text-decoration:line-through;color:var(--text3)':''}">${t.text}</span>
   </div>`).join('');
 }
-function eTg(key,i){if(!S.tasks[key])return;S.tasks[key][i].done=!S.tasks[key][i].done;persist();rTro(key)}
-function saveEnt(){
+async function eTg(key,i){
+  if(!S.tasks[key])return;
+  S.tasks[key][i].done=!S.tasks[key][i].done;
+  rTro(key);
+  if(S.tasks[key][i]._id)await updateTaskDoneToDB(S.tasks[key][i]._id,S.tasks[key][i].done);
+}
+async function saveEnt(){
   if(!S.eSel)return;
-  S.en[dk(S.cu.id,S.eY,S.eM,S.eSel)]={e:document.getElementById('ie').value,s:document.getElementById('is').value,act:document.getElementById('iact').value};
-  persist();rECal();document.getElementById('eform').style.display='none';
-  const b=document.createElement('div');b.className='toast';b.innerHTML='✓ Registro guardado';
-  document.getElementById('emsg').prepend(b);setTimeout(()=>b.remove(),2500);
+  const entrada=document.getElementById('ie').value;
+  const salida=document.getElementById('is').value;
+  const act=document.getElementById('iact').value;
+  const key=dk(S.cu.id,S.eY,S.eM,S.eSel);
+  const existing=S.en[key];
+  const newId=await saveEntryToDB(S.cu.id,S.eY,S.eM,S.eSel,entrada,salida,act,existing?existing._id:null);
+  S.en[key]={e:entrada,s:salida,act,_id:newId};
+  rECal();document.getElementById('eform').style.display='none';
+  toast('Registro guardado');
 }
 
-/* ── ADMIN ── */
+// ═══════════════════════════════════════════
+// ADMIN
+// ═══════════════════════════════════════════
 function showAdmin(){
   S.aY=new Date().getFullYear();S.aM=new Date().getMonth();S.aSel=null;
   document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('act',i===0));
@@ -586,29 +687,19 @@ function rResumen(){
   const gd=globalDeuda(),up=unpaidHours();
   const uh=Math.floor(up.tM/60),um=up.tM%60;
   const isOk=gd.total===0;
-  // 1. DEUDA CARD (total + per family, updated with payments)
   document.getElementById('deuda-main').innerHTML=`
     <div class="deuda-card ${isOk?'ok':''}">
       <div class="deuda-label">Total pendiente de pago</div>
       <div class="deuda-total ${isOk?'ok':''}">${fmt(gd.total)}</div>
-      <div class="deuda-fam-row">
-        <span class="deuda-fam-name">${S.fam1}</span>
-        <span class="deuda-fam-val ${gd.d1===0?'ok':''}">${fmt(gd.d1)}</span>
-      </div>
-      <div class="deuda-fam-row">
-        <span class="deuda-fam-name">${S.fam2}</span>
-        <span class="deuda-fam-val ${gd.d2===0?'ok':''}">${fmt(gd.d2)}</span>
-      </div>
+      <div class="deuda-fam-row"><span class="deuda-fam-name">${S.fam1}</span><span class="deuda-fam-val ${gd.d1===0?'ok':''}">${fmt(gd.d1)}</span></div>
+      <div class="deuda-fam-row"><span class="deuda-fam-name">${S.fam2}</span><span class="deuda-fam-val ${gd.d2===0?'ok':''}">${fmt(gd.d2)}</span></div>
     </div>`;
-  // 2. HORAS SIN PAGAR
   document.getElementById('sa').innerHTML=
-    `<div class="stat-card"><div class="stat-label">Horas sin pagar</div><div class="stat-val ${up.tM>0?'red':''}">${uh}h ${um}m</div><div class="stat-sub">${(up.tM/(JH*60)).toFixed(2)} jornadas de 8h</div></div>`+
+    `<div class="stat-card"><div class="stat-label">Horas sin pagar</div><div class="stat-val ${up.tM>0?'red':''}">${uh}h ${um}m</div><div class="stat-sub">${(up.tM/(JH*60)).toFixed(2)} jornadas</div></div>`+
     `<div class="stat-card"><div class="stat-label">Valor sin pagar</div><div class="stat-val ${up.tV>0?'red':''}">${fmt(up.tV)}</div><div class="stat-sub">${fmt(Math.round(up.tV/2))} por familia</div></div>`;
-  // 3. TARIFAS
   document.getElementById('sb').innerHTML=
     `<div class="stat-card"><div class="stat-label">Jornada completa ≥8h</div><div class="stat-val">${fmt(S.pF)}</div></div>`+
     `<div class="stat-card"><div class="stat-label">Media jornada &lt;8h</div><div class="stat-val">${fmt(S.pH)}</div></div>`;
-  // 4. DETALLE COLABORADORES (mes actual)
   document.getElementById('resumen-mes-lbl').textContent=MO[S.aM]+' '+S.aY;
   const nd=new Date(S.aY,S.aM+1,0).getDate();
   document.getElementById('elist').innerHTML=S.colabs.length?S.colabs.map(c=>{
@@ -626,7 +717,6 @@ function rResumen(){
   }).join(''):'<div style="padding:1rem 0;font-size:13px;color:var(--text2)">Sin colaboradores registrados.</div>';
 }
 
-/* ── CALENDARIO / TAREAS ── */
 function rACal(){
   document.getElementById('acal-lbl').textContent=MO[S.aM]+' '+S.aY;
   const g=document.getElementById('acal');
@@ -640,10 +730,7 @@ function rACal(){
     const dayId=S.aY+'_'+S.aM+'_'+d;
     let cls='cal-day';
     if(isT)cls+=' today';if(S.aSel===d)cls+=' sel';
-    if(hasE){
-      if(paidSet.has(dayId))cls+=' paid-d';
-      else cls+=' pending-d';
-    }
+    if(hasE){cls+=paidSet.has(dayId)?' paid-d':' pending-d';}
     g.innerHTML+=`<div class="${cls}" onclick="aSel(${d})">${d}</div>`;
   }
 }
@@ -683,13 +770,22 @@ function rATasks(key){
     <button class="task-del" onclick="delT('${key}',${i})">×</button>
   </div>`).join('');
 }
-function addTask(){
+async function addTask(){
   const inp=document.getElementById('itask'),v=inp.value.trim();if(!v||!S.aSel)return;
   const key=sk(S.aY,S.aM,S.aSel);if(!S.tasks[key])S.tasks[key]=[];
-  S.tasks[key].push({text:v,done:false});inp.value='';persist();rATasks(key);
+  const newId=await saveTaskToDB(key,v);
+  S.tasks[key].push({text:v,done:false,_id:newId});
+  inp.value='';rATasks(key);
 }
-function delT(key,i){S.tasks[key].splice(i,1);persist();rATasks(key)}
-/* ── PAGOS ── */
+async function delT(key,i){
+  const t=S.tasks[key][i];
+  if(t._id)await delTaskFromDB(t._id);
+  S.tasks[key].splice(i,1);rATasks(key);
+}
+
+// ═══════════════════════════════════════════
+// PAGOS
+// ═══════════════════════════════════════════
 function rPagos(){
   const gd=globalDeuda();
   const{tV,dias,jD}=mStats(S.aY,S.aM);
@@ -697,43 +793,34 @@ function rPagos(){
     `<div class="stat-card"><div class="stat-label">Deuda total pendiente</div><div class="stat-val red">${fmt(gd.total)}</div><div class="stat-sub">${S.fam1} + ${S.fam2}</div></div>`+
     `<div class="stat-card"><div class="stat-label">Generado en ${MO[S.aM]}</div><div class="stat-val">${fmt(tV)}</div><div class="stat-sub">${jD.toFixed(2)} jornadas · ${dias} días</div></div>`;
 
-  // Bank info section
   const bankList=document.getElementById('bank-colab-list');
-  if(!S.colabs.length){
-    bankList.innerHTML='<div style="padding:1rem 0;font-size:13px;color:var(--text2)">Sin colaboradores registrados.</div>';
-  } else {
-    bankList.innerHTML=S.colabs.map(c=>{
-      const hasBankInfo=c.bank&&(c.bank.bankName||c.bank.accountNumber);
-      return `<div class="emp-row" style="cursor:pointer" onclick="toggleBankInfo('${c.id}')">
-        <div class="avatar av-e" style="width:34px;height:34px;font-size:12px">${getIni(c.name)}</div>
-        <div style="flex:1">
-          <div style="font-size:14px;font-weight:500">${c.name}</div>
-          <div style="font-size:12px;color:var(--text2)">${hasBankInfo?'Toca para ver info bancaria':'Sin info bancaria registrada'}</div>
-        </div>
-        <span style="font-size:18px;color:var(--text3)" id="bank-arrow-${c.id}">›</span>
-      </div>
-      <div id="bank-detail-${c.id}" style="display:none;background:var(--bg);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px;font-size:13px">
-        ${hasBankInfo?`
-          <div style="display:grid;gap:6px">
-            ${c.bank.bankName?`<div><span style="color:var(--text2)">Banco: </span><strong>${c.bank.bankName}</strong></div>`:''}
-            ${c.bank.accountType?`<div><span style="color:var(--text2)">Tipo de cuenta: </span><strong>${c.bank.accountType}</strong></div>`:''}
-            ${c.bank.accountNumber?`<div><span style="color:var(--text2)">Número de cuenta: </span><strong style="font-family:'DM Mono',monospace">${c.bank.accountNumber}</strong></div>`:''}
-            ${c.bank.accountHolder?`<div><span style="color:var(--text2)">Titular: </span><strong>${c.bank.accountHolder}</strong></div>`:''}
-            ${c.bank.docType&&c.bank.docNumber?`<div><span style="color:var(--text2)">${c.bank.docType}: </span><strong style="font-family:'DM Mono',monospace">${c.bank.docNumber}</strong></div>`:''}
-            ${c.bank.phone?`<div><span style="color:var(--text2)">Nequi / Daviplata: </span><strong style="font-family:'DM Mono',monospace">${c.bank.phone}</strong></div>`:''}
-            ${c.bank.notes?`<div style="margin-top:4px;color:var(--text2);font-style:italic">${c.bank.notes}</div>`:''}
-          </div>`:'<span style="color:var(--text3)">Sin información bancaria registrada.</span>'}
-      </div>`;
-    }).join('');
-  }
+  if(!S.colabs.length){bankList.innerHTML='<div style="padding:1rem 0;font-size:13px;color:var(--text2)">Sin colaboradores.</div>';}
+  else{bankList.innerHTML=S.colabs.map(c=>{
+    const hasBankInfo=c.bank&&(c.bank.bankName||c.bank.accountNumber);
+    return `<div class="emp-row" style="cursor:pointer" onclick="toggleBankInfo('${c.id}')">
+      <div class="avatar av-e" style="width:34px;height:34px;font-size:12px">${getIni(c.name)}</div>
+      <div style="flex:1"><div style="font-size:14px;font-weight:500">${c.name}</div>
+      <div style="font-size:12px;color:var(--text2)">${hasBankInfo?'Toca para ver info bancaria':'Sin info bancaria registrada'}</div></div>
+      <span id="bank-arrow-${c.id}" style="font-size:18px;color:var(--text3)">›</span>
+    </div>
+    <div id="bank-detail-${c.id}" style="display:none;background:var(--bg);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px;font-size:13px">
+      ${hasBankInfo?`<div style="display:grid;gap:6px">
+        ${c.bank.bankName?`<div><span style="color:var(--text2)">Banco: </span><strong>${c.bank.bankName}</strong></div>`:''}
+        ${c.bank.accountType?`<div><span style="color:var(--text2)">Tipo: </span><strong>${c.bank.accountType}</strong></div>`:''}
+        ${c.bank.accountNumber?`<div><span style="color:var(--text2)">Cuenta: </span><strong style="font-family:'DM Mono',monospace">${c.bank.accountNumber}</strong></div>`:''}
+        ${c.bank.accountHolder?`<div><span style="color:var(--text2)">Titular: </span><strong>${c.bank.accountHolder}</strong></div>`:''}
+        ${c.bank.docType&&c.bank.docNumber?`<div><span style="color:var(--text2)">${c.bank.docType}: </span><strong style="font-family:'DM Mono',monospace">${c.bank.docNumber}</strong></div>`:''}
+        ${c.bank.phone?`<div><span style="color:var(--text2)">Nequi/Daviplata: </span><strong style="font-family:'DM Mono',monospace">${c.bank.phone}</strong></div>`:''}
+        ${c.bank.notes?`<div style="color:var(--text2);font-style:italic;margin-top:4px">${c.bank.notes}</div>`:''}
+      </div>`:'<span style="color:var(--text3)">Sin información bancaria registrada.</span>'}
+    </div>`;
+  }).join('');}
 
   document.getElementById('fcards').innerHTML=['fam1','fam2'].map(fid=>{
     const fname=fid==='fam1'?S.fam1:S.fam2;
     const payments=S.famPayments[fid]||[];
     const totalExtra=payments.reduce((a,p)=>a+p.amount,0);
     const deuda=fid==='fam1'?gd.d1:gd.d2;
-
-    // Group by month
     const byMonth={};
     payments.forEach(p=>{
       const dt=new Date(p.date+'T12:00:00');
@@ -741,25 +828,22 @@ function rPagos(){
       if(!byMonth[mk2])byMonth[mk2]={label:MO[dt.getMonth()]+' '+dt.getFullYear(),total:0,items:[]};
       byMonth[mk2].items.push(p);byMonth[mk2].total+=p.amount;
     });
-
-    const histRows=Object.entries(byMonth).sort((a,b)=>b[0].localeCompare(a[0])).map(([,grp])=>`
-      <tr><td colspan="4" style="padding:8px 0 4px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--border)">${grp.label} — <span style="color:var(--green)">${fmt(grp.total)}</span></td></tr>`+
+    const histRows=Object.entries(byMonth).sort((a,b)=>b[0].localeCompare(a[0])).map(([,grp])=>
+      `<tr><td colspan="4" style="padding:8px 0 4px;font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;border-bottom:1px solid var(--border)">${grp.label} — <span style="color:var(--green)">${fmt(grp.total)}</span></td></tr>`+
       grp.items.map(p=>`<tr>
         <td style="font-size:12px;color:var(--text2);white-space:nowrap">${p.date}</td>
         <td style="font-size:12px;color:var(--text2);max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.note||'—'}</td>
         <td style="text-align:right;font-family:'DM Mono',monospace;font-weight:500;color:var(--green);white-space:nowrap">${fmt(p.amount)}</td>
         <td style="text-align:right;white-space:nowrap">
-          ${p.fileName?`<button onclick="viewFile('${fid}','${p.id}')" title="Ver soporte" style="font-size:13px;background:transparent;border:none;cursor:pointer">📎</button>`:''}
-          <button onclick="delPago('${fid}','${p.id}')" style="font-size:14px;color:var(--text3);background:transparent;border:none;cursor:pointer;padding:0 2px">×</button>
+          ${p.fileName?`<button onclick="viewFile('${fid}','${p.id}')" style="font-size:13px;background:transparent;border:none;cursor:pointer">📎</button>`:''}
+          <button onclick="delPago('${fid}','${p.id}')" style="font-size:14px;color:var(--text3);background:transparent;border:none;cursor:pointer">×</button>
         </td>
       </tr>`).join('')
     ).join('');
-
     return `<div class="fam-card">
       <div class="fam-card-head">
         <div><div class="fam-card-name">${fname}</div>
-          <div style="font-size:12px;color:var(--text2);margin-top:3px">Pendiente: <strong style="color:${deuda>0?'var(--red)':'var(--green)'}">${fmt(deuda)}</strong></div>
-        </div>
+          <div style="font-size:12px;color:var(--text2);margin-top:3px">Pendiente: <strong style="color:${deuda>0?'var(--red)':'var(--green)'}">${fmt(deuda)}</strong></div></div>
         <span class="pill ${deuda===0?'pill-ok':'pill-no'}">${deuda===0?'Al día':'Pendiente'}</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border)">
@@ -772,9 +856,7 @@ function rPagos(){
           <div style="font-size:17px;font-weight:700;color:var(--red);font-family:'DM Mono',monospace">${fmt(deuda)}</div>
         </div>
       </div>
-
-      ${payments.length?`
-        <div class="slabel">Historial de pagos adicionales</div>
+      ${payments.length?`<div class="slabel">Historial de pagos</div>
         <div style="overflow-x:auto;margin-bottom:12px">
           <table class="pay-table">
             <thead><tr><th>Fecha</th><th>Nota</th><th style="text-align:right">Monto</th><th></th></tr></thead>
@@ -784,8 +866,7 @@ function rPagos(){
             <span style="font-size:13px;font-weight:600;color:var(--text2)">Total pagado</span>
             <span style="font-size:14px;font-weight:700;color:var(--green);font-family:'DM Mono',monospace">${fmt(totalExtra)}</span>
           </div>
-        </div>`:`<div style="font-size:13px;color:var(--text3);text-align:center;padding:12px 0;margin-bottom:8px">Sin pagos adicionales registrados</div>`}
-
+        </div>`:`<div style="font-size:13px;color:var(--text3);text-align:center;padding:12px 0;margin-bottom:8px">Sin pagos registrados</div>`}
       <div class="extra-form">
         <div class="extra-form-title">Registrar pago adicional</div>
         <div class="two-col" style="margin-bottom:8px">
@@ -793,10 +874,7 @@ function rPagos(){
           <div><label class="field-label">Monto (COP)</label><input type="number" id="pm-${fid}" min="0" step="1000" placeholder="50000"></div>
         </div>
         <div style="margin-bottom:8px"><label class="field-label">Nota (opcional)</label><input type="text" id="pn-${fid}" placeholder="Ej: Pago quincenal mayo"></div>
-        <label class="file-upload-lbl">
-          📎 Adjuntar soporte de pago
-          <input type="file" id="pf-${fid}" accept="image/*,application/pdf" style="display:none" onchange="handleFile('${fid}')">
-        </label>
+        <label class="file-upload-lbl">📎 Adjuntar soporte<input type="file" id="pf-${fid}" accept="image/*,application/pdf" style="display:none" onchange="handleFile('${fid}')"></label>
         <div id="file-name-${fid}" class="file-attached" style="display:none"></div>
         <button class="btn-save" style="margin-top:10px;width:100%" onclick="savePago('${fid}')">Registrar pago</button>
       </div>
@@ -805,47 +883,46 @@ function rPagos(){
 }
 
 function toggleBankInfo(id){
-  const el=document.getElementById('bank-detail-'+id);
-  const arrow=document.getElementById('bank-arrow-'+id);
-  const isOpen=el.style.display!=='none';
-  el.style.display=isOpen?'none':'block';
-  arrow.textContent=isOpen?'›':'‹';
+  const el=document.getElementById('bank-detail-'+id),arrow=document.getElementById('bank-arrow-'+id);
+  const isOpen=el.style.display!=='none';el.style.display=isOpen?'none':'block';arrow.textContent=isOpen?'›':'‹';
 }
-
 function handleFile(fid){
-  const inp=document.getElementById('pf-'+fid);const file=inp.files[0];if(!file)return;
-  const lbl=document.getElementById('file-name-'+fid);lbl.textContent='📎 '+file.name;lbl.style.display='block';
-  const reader=new FileReader();reader.onload=e=>{tempFiles[fid]={name:file.name,data:e.target.result};};
-  reader.readAsDataURL(file);
+  const inp=document.getElementById('pf-'+fid),file=inp.files[0];if(!file)return;
+  document.getElementById('file-name-'+fid).textContent='📎 '+file.name;document.getElementById('file-name-'+fid).style.display='block';
+  const reader=new FileReader();reader.onload=e=>{tempFiles[fid]={name:file.name,data:e.target.result};};reader.readAsDataURL(file);
 }
-function savePago(fid){
+async function savePago(fid){
   const date=document.getElementById('pd-'+fid).value;
   const amount=parseFloat(document.getElementById('pm-'+fid).value);
   const note=document.getElementById('pn-'+fid).value.trim();
   if(!date){alert('Selecciona una fecha');return}
   if(isNaN(amount)||amount<=0){alert('Ingresa un monto válido');return}
   if(!S.famPayments[fid])S.famPayments[fid]=[];
-  const pago={id:'p'+Date.now(),date,amount,note};
+  const pago={id:'p'+Date.now(),familyId:fid,date,amount,note};
   if(tempFiles[fid]){pago.fileName=tempFiles[fid].name;pago.fileData=tempFiles[fid].data;delete tempFiles[fid];}
-  S.famPayments[fid].push(pago);persist();
+  await saveFamPaymentToDB(pago);
+  S.famPayments[fid].push({id:pago.id,date,amount,note,fileName:pago.fileName,fileData:pago.fileData});
   document.getElementById('pm-'+fid).value='';document.getElementById('pn-'+fid).value='';
   document.getElementById('pf-'+fid).value='';document.getElementById('file-name-'+fid).style.display='none';
   rPagos();rResumen();
 }
-function delPago(fid,id){
+async function delPago(fid,id){
   if(!confirm('¿Eliminar este pago?'))return;
+  await delFamPaymentFromDB(id);
   S.famPayments[fid]=S.famPayments[fid].filter(p=>p.id!==id);
-  persist();rPagos();rResumen();
+  rPagos();rResumen();
 }
 function viewFile(fid,id){
   const p=(S.famPayments[fid]||[]).find(x=>x.id===id);
-  if(!p||!p.fileData){alert('Archivo no disponible en esta sesión');return}
+  if(!p||!p.fileData){alert('Archivo no disponible');return}
   const win=window.open('','_blank');
   if(p.fileData.startsWith('data:image')){win.document.write(`<img src="${p.fileData}" style="max-width:100%">`);}
   else{win.document.write(`<iframe src="${p.fileData}" style="width:100%;height:100vh;border:none"></iframe>`);}
 }
 
-/* ── CONFIG ── */
+// ═══════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════
 function rCfg(){
   document.getElementById('fam1-name').value=S.fam1;document.getElementById('fam2-name').value=S.fam2;
   document.getElementById('colab-config-list').innerHTML=S.colabs.length
@@ -853,145 +930,110 @@ function rCfg(){
       const pF=c.pF||S.pF,pH=c.pH||S.pH;
       return `<div class="colab-row">
         <div class="avatar av-e" style="width:34px;height:34px;font-size:12px">${getIni(c.name)}</div>
-        <div style="flex:1">
-          <div style="font-size:14px;font-weight:500">${c.name}</div>
-          <div style="font-size:11px;color:var(--text2);font-family:'DM Mono',monospace">${fmt(pF)} jornada · ${fmt(pH)} media</div>
-        </div>
+        <div style="flex:1"><div style="font-size:14px;font-weight:500">${c.name}</div>
+        <div style="font-size:11px;color:var(--text2);font-family:'DM Mono',monospace">${fmt(pF)} jornada · ${fmt(pH)} media</div></div>
         <button class="btn-sm" style="font-size:12px;padding:5px 8px" onclick="openEditColab('${c.id}')">Editar</button>
         <button class="btn-danger" style="font-size:12px;padding:5px 8px" onclick="delColab('${c.id}')">×</button>
       </div>`;
     }).join('')
     :'<div style="padding:.5rem 0;font-size:13px;color:var(--text2)">Sin colaboradores. Agrega uno arriba.</div>';
 }
-function saveFams(){
+async function saveFams(){
   const f1=document.getElementById('fam1-name').value.trim(),f2=document.getElementById('fam2-name').value.trim();
-  if(f1)S.fam1=f1;if(f2)S.fam2=f2;persist();rCfg();rResumen();
+  if(f1){S.fam1=f1;await saveConfig('fam1',f1);}
+  if(f2){S.fam2=f2;await saveConfig('fam2',f2);}
+  rCfg();rResumen();
 }
 function colabFormHtml(c){
-  // Shared form fields for both add and edit
-  const pF=c?c.pF||S.pF:S.pF;
-  const pH=c?c.pH||S.pH:S.pH;
-  const b=c&&c.bank?c.bank:{};
+  const pF=c?c.pF||S.pF:S.pF,pH=c?c.pH||S.pH:S.pH,b=c&&c.bank?c.bank:{};
   return `
     <div style="margin-bottom:8px"><label class="field-label">Nombre completo</label><input type="text" id="cf-name" placeholder="Ej: María García" value="${c?c.name:''}"></div>
-    <div class="two-col" style="margin-bottom:8px">
-      <div><label class="field-label">PIN de acceso (4 dígitos)</label><input type="password" id="cf-pin" maxlength="4" inputmode="numeric" style="letter-spacing:8px;font-size:20px;text-align:center" placeholder="····" value="${c?c.pin:''}"></div>
-      <div></div>
-    </div>
+    <div style="margin-bottom:8px"><label class="field-label">PIN de acceso (4 dígitos)</label><input type="password" id="cf-pin" maxlength="4" inputmode="numeric" style="letter-spacing:8px;font-size:20px;text-align:center" placeholder="····" value="${c?c.pin:''}"></div>
     <hr style="border:none;border-top:1px solid var(--border);margin:10px 0">
     <div class="slabel" style="margin-bottom:8px">Tarifas personalizadas</div>
     <div class="two-col" style="margin-bottom:8px">
-      <div><label class="field-label">Jornada completa ≥8h (COP)</label><input type="number" id="cf-pf" min="0" step="1000" value="${pF}" placeholder="${S.pF}"></div>
-      <div><label class="field-label">Media jornada &lt;8h (COP)</label><input type="number" id="cf-ph" min="0" step="1000" value="${pH}" placeholder="${S.pH}"></div>
+      <div><label class="field-label">Jornada completa ≥8h (COP)</label><input type="number" id="cf-pf" min="0" step="1000" value="${pF}"></div>
+      <div><label class="field-label">Media jornada &lt;8h (COP)</label><input type="number" id="cf-ph" min="0" step="1000" value="${pH}"></div>
     </div>
     <hr style="border:none;border-top:1px solid var(--border);margin:10px 0">
     <div class="slabel" style="margin-bottom:8px">Información bancaria</div>
-    <div style="margin-bottom:6px"><label class="field-label">Banco</label><input type="text" id="cf-bank" placeholder="Ej: Bancolombia, Davivienda..." value="${b.bankName||''}"></div>
+    <div style="margin-bottom:6px"><label class="field-label">Banco</label><input type="text" id="cf-bank" placeholder="Ej: Bancolombia" value="${b.bankName||''}"></div>
     <div class="two-col" style="margin-bottom:6px">
       <div><label class="field-label">Tipo de cuenta</label>
-        <select id="cf-atype">
-          <option value="" ${!b.accountType?'selected':''}>Seleccionar</option>
+        <select id="cf-atype"><option value="" ${!b.accountType?'selected':''}>Seleccionar</option>
           <option value="Ahorros" ${b.accountType==='Ahorros'?'selected':''}>Ahorros</option>
           <option value="Corriente" ${b.accountType==='Corriente'?'selected':''}>Corriente</option>
           <option value="Nequi" ${b.accountType==='Nequi'?'selected':''}>Nequi</option>
-          <option value="Daviplata" ${b.accountType==='Daviplata'?'selected':''}>Daviplata</option>
-        </select>
-      </div>
+          <option value="Daviplata" ${b.accountType==='Daviplata'?'selected':''}>Daviplata</option></select></div>
       <div><label class="field-label">Número de cuenta</label><input type="text" id="cf-anum" placeholder="0000000000" value="${b.accountNumber||''}"></div>
     </div>
     <div class="two-col" style="margin-bottom:6px">
-      <div><label class="field-label">Titular</label><input type="text" id="cf-holder" placeholder="Nombre titular" value="${b.accountHolder||''}"></div>
+      <div><label class="field-label">Titular</label><input type="text" id="cf-holder" value="${b.accountHolder||''}"></div>
       <div><label class="field-label">Celular / Nequi</label><input type="text" id="cf-phone" placeholder="300 000 0000" value="${b.phone||''}"></div>
     </div>
     <div class="two-col" style="margin-bottom:6px">
       <div><label class="field-label">Tipo doc.</label>
-        <select id="cf-dtype">
-          <option value="CC" ${b.docType==='CC'||!b.docType?'selected':''}>CC</option>
+        <select id="cf-dtype"><option value="CC" ${b.docType==='CC'||!b.docType?'selected':''}>CC</option>
           <option value="CE" ${b.docType==='CE'?'selected':''}>CE</option>
-          <option value="Pasaporte" ${b.docType==='Pasaporte'?'selected':''}>Pasaporte</option>
-        </select>
-      </div>
-      <div><label class="field-label">Número de documento</label><input type="text" id="cf-dnum" placeholder="123456789" value="${b.docNumber||''}"></div>
+          <option value="Pasaporte" ${b.docType==='Pasaporte'?'selected':''}>Pasaporte</option></select></div>
+      <div><label class="field-label">Número de documento</label><input type="text" id="cf-dnum" value="${b.docNumber||''}"></div>
     </div>
     <div style="margin-bottom:8px"><label class="field-label">Notas adicionales</label><input type="text" id="cf-notes" placeholder="Ej: Solo transferencias los viernes" value="${b.notes||''}"></div>`;
 }
-
 function openAddColab(){
-  showM(`<h3>Nuevo colaborador</h3>${colabFormHtml(null)}
-    <div class="modal-btns"><button class="btn-cancel" onclick="closeM()">Cancelar</button><button class="btn-ok" onclick="svColab()">Guardar</button></div>`);
+  showM(`<h3>Nuevo colaborador</h3>${colabFormHtml(null)}<div class="modal-btns"><button class="btn-cancel" onclick="closeM()">Cancelar</button><button class="btn-ok" onclick="svColab()">Guardar</button></div>`);
 }
-function svColab(){
-  const name=document.getElementById('cf-name').value.trim();
-  const pin=document.getElementById('cf-pin').value;
-  if(!name){alert('Ingresa un nombre');return}
-  if(!/^\d{4}$/.test(pin)){alert('El PIN debe tener 4 dígitos');return}
-  const pF=parseInt(document.getElementById('cf-pf').value);
-  const pH=parseInt(document.getElementById('cf-ph').value);
-  const bank={
-    bankName:document.getElementById('cf-bank').value.trim(),
-    accountType:document.getElementById('cf-atype').value,
-    accountNumber:document.getElementById('cf-anum').value.trim(),
-    accountHolder:document.getElementById('cf-holder').value.trim(),
-    phone:document.getElementById('cf-phone').value.trim(),
-    docType:document.getElementById('cf-dtype').value,
-    docNumber:document.getElementById('cf-dnum').value.trim(),
-    notes:document.getElementById('cf-notes').value.trim()
-  };
-  S.colabs.push({id:'c'+Date.now(),name,pin,pF:isNaN(pF)?S.pF:pF,pH:isNaN(pH)?S.pH:pH,bank});
-  persist();closeM();rCfg();
+async function svColab(){
+  const name=document.getElementById('cf-name').value.trim(),pin=document.getElementById('cf-pin').value;
+  if(!name){alert('Ingresa un nombre');return}if(!/^\d{4}$/.test(pin)){alert('PIN debe tener 4 dígitos');return}
+  const pF=parseInt(document.getElementById('cf-pf').value)||S.pF;
+  const pH=parseInt(document.getElementById('cf-ph').value)||S.pH;
+  const bank={bankName:document.getElementById('cf-bank').value.trim(),accountType:document.getElementById('cf-atype').value,accountNumber:document.getElementById('cf-anum').value.trim(),accountHolder:document.getElementById('cf-holder').value.trim(),phone:document.getElementById('cf-phone').value.trim(),docType:document.getElementById('cf-dtype').value,docNumber:document.getElementById('cf-dnum').value.trim(),notes:document.getElementById('cf-notes').value.trim()};
+  const c={id:'c'+Date.now(),name,pin,pF,pH,bank};
+  await saveColabToDB(c);
+  S.colabs.push(c);closeM();rCfg();
 }
 function openEditColab(id){
   const c=S.colabs.find(x=>x.id===id);
-  showM(`<h3>Editar · ${c.name}</h3>${colabFormHtml(c)}
-    <div class="modal-btns"><button class="btn-cancel" onclick="closeM()">Cancelar</button><button class="btn-ok" onclick="svEditColab('${id}')">Guardar</button></div>`);
+  showM(`<h3>Editar · ${c.name}</h3>${colabFormHtml(c)}<div class="modal-btns"><button class="btn-cancel" onclick="closeM()">Cancelar</button><button class="btn-ok" onclick="svEditColab('${id}')">Guardar</button></div>`);
 }
-function svEditColab(id){
+async function svEditColab(id){
   const c=S.colabs.find(x=>x.id===id);
-  const name=document.getElementById('cf-name').value.trim();
-  const pin=document.getElementById('cf-pin').value;
-  if(!name){alert('Ingresa un nombre');return}
-  if(!/^\d{4}$/.test(pin)){alert('El PIN debe tener 4 dígitos');return}
-  const pF=parseInt(document.getElementById('cf-pf').value);
-  const pH=parseInt(document.getElementById('cf-ph').value);
+  const name=document.getElementById('cf-name').value.trim(),pin=document.getElementById('cf-pin').value;
+  if(!name){alert('Ingresa un nombre');return}if(!/^\d{4}$/.test(pin)){alert('PIN debe tener 4 dígitos');return}
   c.name=name;c.pin=pin;
-  c.pF=isNaN(pF)?S.pF:pF;
-  c.pH=isNaN(pH)?S.pH:pH;
-  c.bank={
-    bankName:document.getElementById('cf-bank').value.trim(),
-    accountType:document.getElementById('cf-atype').value,
-    accountNumber:document.getElementById('cf-anum').value.trim(),
-    accountHolder:document.getElementById('cf-holder').value.trim(),
-    phone:document.getElementById('cf-phone').value.trim(),
-    docType:document.getElementById('cf-dtype').value,
-    docNumber:document.getElementById('cf-dnum').value.trim(),
-    notes:document.getElementById('cf-notes').value.trim()
-  };
-  persist();closeM();rCfg();
+  c.pF=parseInt(document.getElementById('cf-pf').value)||S.pF;
+  c.pH=parseInt(document.getElementById('cf-ph').value)||S.pH;
+  c.bank={bankName:document.getElementById('cf-bank').value.trim(),accountType:document.getElementById('cf-atype').value,accountNumber:document.getElementById('cf-anum').value.trim(),accountHolder:document.getElementById('cf-holder').value.trim(),phone:document.getElementById('cf-phone').value.trim(),docType:document.getElementById('cf-dtype').value,docNumber:document.getElementById('cf-dnum').value.trim(),notes:document.getElementById('cf-notes').value.trim()};
+  await saveColabToDB(c);closeM();rCfg();
 }
-function delColab(id){
+async function delColab(id){
   if(!confirm('¿Eliminar este colaborador?'))return;
+  await delColabFromDB(id);
   S.colabs=S.colabs.filter(c=>c.id!==id);
   Object.keys(S.en).forEach(k=>{if(k.startsWith(id+'_'))delete S.en[k]});
-  persist();rCfg();
+  rCfg();
 }
 function openChgAdminPin(){
   showM(`<h3>Cambiar PIN de administrador</h3>
-    <label class="field-label">PIN actual</label>
-    <input type="password" id="op" maxlength="4" inputmode="numeric" style="letter-spacing:10px;font-size:22px;text-align:center;margin-bottom:12px" placeholder="····">
-    <label class="field-label">Nuevo PIN (4 dígitos)</label>
-    <input type="password" id="np2" maxlength="4" inputmode="numeric" style="letter-spacing:10px;font-size:22px;text-align:center" placeholder="····">
+    <label class="field-label">PIN actual</label><input type="password" id="op" maxlength="4" inputmode="numeric" style="letter-spacing:10px;font-size:22px;text-align:center;margin-bottom:12px" placeholder="····">
+    <label class="field-label">Nuevo PIN (4 dígitos)</label><input type="password" id="np2" maxlength="4" inputmode="numeric" style="letter-spacing:10px;font-size:22px;text-align:center" placeholder="····">
     <div class="modal-btns"><button class="btn-cancel" onclick="closeM()">Cancelar</button><button class="btn-ok" onclick="svAdminPin()">Guardar</button></div>`);
 }
-function svAdminPin(){
+async function svAdminPin(){
   const op=document.getElementById('op').value,np=document.getElementById('np2').value;
   if(op!==S.adminPin){alert('PIN actual incorrecto');return}if(!/^\d{4}$/.test(np)){alert('Nuevo PIN debe tener 4 dígitos');return}
-  S.adminPin=np;persist();closeM();alert('PIN actualizado correctamente');
+  await saveConfig('adminPin',np);S.adminPin=np;closeM();alert('PIN actualizado correctamente');
 }
+
 function showM(html){document.getElementById('mbox').innerHTML=html;document.getElementById('mbg').classList.add('open')}
 function closeM(){document.getElementById('mbg').classList.remove('open')}
 document.getElementById('mbg').addEventListener('click',e=>{if(e.target===document.getElementById('mbg'))closeM()})
 
-hydrate();
+// ═══════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════
+loadAll();
 </script>
 </body>
 </html>
